@@ -1,0 +1,65 @@
+# shape file name
+#s:/spheres/1536facets.obj.convex
+/home/mm/__work/shapes/spheres/1536facets.obj.convex
+
+# absolute optical magnitude, H, and slope parameter, G
+17.365
+0.15
+# emissivity (usually = 0.9)
+0.9
+# pV = geometric albedo
+0.2
+
+# spin axis: ecl. lambda + beta (deg), period (h), JD0, phi0
+# (note: latitude runs from -90 to 90)
+0
+90
+2
+2454291.42778
+0
+
+# discretization parameters:
+# nTime, nZ, zMax, accuracyTI, accuracyCrater
+300
+25
+6
+1e-3
+1e-2
+
+
+# crater opening angle (deg) + crater density
+#
+## high roughness:
+#151.75834
+#1
+## default roughness:
+# 144.59046
+# 0.6
+## low roughness:
+# 117.70116
+# 0.4
+## no roughness:
+0
+0
+
+
+# thermal wavelength (micron)
+10
+
+# thermal inertia (SI units)
+300
+
+# JD of desired lightcurve
+2454291.42778
+
+# Observing geometry:
+# Ecl. coordinates Sun->Asteroid: longitude + latitude (deg), distance (AU)
+0
+0
+1.1
+# Ecl. coordinates Observer->Asteroid: longitude + latitude (deg), distance (AU)
+20
+0
+0.1
+
+

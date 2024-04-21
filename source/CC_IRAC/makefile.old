@@ -1,0 +1,32 @@
+##----------------------------------------------------------------------------
+# Created with genmake.pl v1.1 on Tue May 27 18:59:30 2008
+# genmake.pl home: http://muquit.com/muquit/software/
+# Copryright: GNU GPL (http://www.gnu.org/copyleft/gpl.html)
+##----------------------------------------------------------------------------
+rm=/bin/rm -f
+CC= g++
+PROGNAME= CC_IRAC
+
+CFLAGS= -O3
+
+SRCS = CC.cpp ../asteroid.cpp ../ConvexFile.cpp ../HemisphericCrater.cpp ../HemisphericNoInertia.cpp ../HybridModel.cpp ../InertiaTimesCraterLagerros.cpp ../ThermalInertia.cpp ../ThermalInertiaOnlyConvex.cpp ../TriangulatedConvex.cpp ../vector3.cpp 
+
+OBJS = CC.o ../asteroid.o ../ConvexFile.o ../HemisphericCrater.o ../HemisphericNoInertia.o ../HybridModel.o ../InertiaTimesCraterLagerros.o ../ThermalInertia.o ../ThermalInertiaOnlyConvex.o ../TriangulatedConvex.o ../vector3.o 
+
+#.c.o:
+#	$(rm) $@
+#	$(CC) $(CFLAGS) -c $*.cpp
+.cpp.o:
+	$(CC) -c $(CFLAGS) $< -o $@
+
+all: $(SRCS) $(PROGNAME)
+
+
+$(PROGNAME) : $(OBJS)
+	$(CC) $(CFLAGS) -o $(PROGNAME) $(OBJS)
+
+clean:
+	$(rm) $(OBJS) $(PROGNAME) core *~
+
+
+# DO NOT DELETE
