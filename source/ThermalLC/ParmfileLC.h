@@ -6,7 +6,7 @@
 #include<string>
 #include<vector>
 #include<stdexcept>
-#include "../../MM_textutils.h"
+#include "../MM_textutils.h"
 
 class ParmfileLC
 {
